@@ -45,6 +45,12 @@ public:
             tail = newNode;
             return;
         }
+        if (head->section > s)
+        {
+            newNode->next = head;
+            head = newNode;
+            return;
+        }
         Node *temp = head;
         while (temp->next != NULL || temp->next->section < s)
         {
