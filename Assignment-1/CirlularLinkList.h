@@ -27,6 +27,7 @@ class CirlularLL
     Node *head, *tail;
     int size;
 
+public:
     CirlularLL()
     {
         head = NULL;

@@ -13,6 +13,7 @@ using namespace std;
 
 struct Node
 {
+public:
     int rollno;
     char section;
     Node *next;

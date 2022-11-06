@@ -38,7 +38,7 @@ Node *alternateMerge(Node *head1, Node *head2)
         return head1;
     }
     Node *p1 = head1, *p2 = head2;
-    bool up = true;
+    bool up = false;
     Node *newh = p1, newt = p1;
     while (p1 != NULL || p2 != NULL)
     {
@@ -47,12 +47,14 @@ Node *alternateMerge(Node *head1, Node *head2)
             newt->next = p1;
             newt = p1;
             p1 = p1->next;
+            up = false;
         }
         else
         {
             newt->next = p2;
             newt = p2;
             p2 = p2->next;
+            up = true;
         }
     }
     if (p1 != NULL)

@@ -35,7 +35,7 @@ public:
             return NULL;
         }
         Node *fast = head, *slow = head;
-        while (fast != NULL)
+        while (fast != NULL && fast->next->next != NULL)
         {
             fast = fast->next->next;
             slow = slow->next;
