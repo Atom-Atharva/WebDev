@@ -39,7 +39,7 @@ Node *alternateMerge(Node *head1, Node *head2)
     }
     Node *p1 = head1, *p2 = head2;
     bool up = false;
-    Node *newh = p1, newt = p1;
+    Node *newh = p1, *newt = p1;
     while (p1 != NULL || p2 != NULL)
     {
         if (up)
