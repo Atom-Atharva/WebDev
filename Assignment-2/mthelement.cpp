@@ -7,16 +7,13 @@ using namespace std;
 
 int findmthelement(StackUsingLL<int> s1, int m)
 {
-    StackUsingLL<int> s2;
+
     for (int i = 1; i < m; i++)
     {
-        s2.push(s1.pop());
+        s1.pop();
     }
     int ans = s1.pop();
-    while (!s2.isEmpty())
-    {
-        s1.push(s2.pop());
-    }
+    s1.push(ans);
     return ans;
 }
 

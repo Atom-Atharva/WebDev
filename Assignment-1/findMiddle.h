@@ -30,9 +30,9 @@ public:
 
     Node *middle(Node *head)
     {
-        if (head == NULL)
+        if (head == NULL || head->next == NULL)
         {
-            return NULL;
+            return head;
         }
         Node *fast = head, *slow = head;
         while (fast != NULL && fast->next->next != NULL)

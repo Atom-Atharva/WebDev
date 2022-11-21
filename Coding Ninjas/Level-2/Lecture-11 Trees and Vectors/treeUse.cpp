@@ -155,7 +155,7 @@ TreeNode<int> *takeInputLevelwise()
         {
             int childData;
             cout << "ENTER DATA OF CHILD:" << endl;
-            cin >> childData;
+            cin >> childData;   
             TreeNode<int> *child = new TreeNode<int>(childData);
             front->children.push_back(child);
             pendingNodes.push(child);
