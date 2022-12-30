@@ -41,7 +41,7 @@ public:
         return result;
     }
 
-    // Knife Solution--
+    // Naive Solution--
     // Time Complexity-- O(n)
     // vector<int> twoSum(vector<int> &arr, int target)
     // {

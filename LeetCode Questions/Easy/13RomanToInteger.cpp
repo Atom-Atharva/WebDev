@@ -54,7 +54,7 @@ public:
     }
 };
 
-// Knife Method--
+// Naive Method--
 // class Solution
 // {
 //     int convert(char c)

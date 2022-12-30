@@ -37,7 +37,7 @@ public:
     }
 };
 
-// Knife Method--
+//  Naive Method--
 //  class Solution
 //  {
 //  public:
