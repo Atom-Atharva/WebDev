@@ -13,6 +13,7 @@ using namespace std;
 class Solution
 {
 public:
+    // Optimized Method--
     int lengthOfLastWord(string s)
     {
         int len = 0;
