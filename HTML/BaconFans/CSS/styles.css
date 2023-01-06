@@ -1,29 +1,25 @@
 /***************TAG SELECTOR***************/
 
-h1{
-    color:red;
+h1 {
+    color: red;
 }
 
-img:hover{
+img:hover {
     background-color: gold;
 }
 
 /***************CLASS SELECTOR***************/
 
-.broccoli
-{
+.broccoli {
     background-color: red;
 }
 
-.bacon
-{
+.bacon {
     background-color: green;
 }
 
-
 /***************IDs SELECTOR***************/
 
-#Heading
-{
-    color:blue;   
+#Heading {
+    color: blue;
 }
