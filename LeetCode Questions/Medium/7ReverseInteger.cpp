@@ -11,7 +11,6 @@ using namespace std;
 class Solution
 {
 public:
-    // // Naive Solution--
     int reverse(int x)
     {
         long ans = 0;
