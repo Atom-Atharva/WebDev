@@ -46,16 +46,17 @@ public:
             for (int j = i + 1; j < nums.size() - 1; j++)
             {
                 int req = -(nums[i] + nums[j]);
+                // .find() ---> Helps to find the element in the map, if found return iterator to the element otherwise return map.end().
                 if (hashMap.count(req) > 0 && hashMap.find(req)->second > j)
                 {
                     ans.push_back({nums[i], nums[j], req});
                 }
 
-                //Updating j to last occurance of the element--
+                // Updating j to last occurance of the element--
                 j = hashMap.find(nums[j])->second;
             }
 
-            //Updation i to last occurance of the element--
+            // Updation i to last occurance of the element--
             i = hashMap.find(nums[i])->second;
         }
         return ans;
