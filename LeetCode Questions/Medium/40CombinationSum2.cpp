@@ -32,7 +32,7 @@ class Solution
         sum(candidates, target - candidates[i], arr, ans, i + 1);
         arr.pop_back();
 
-        // Case-2 : Not Taking and candidate[i]
+        // Case-2 : Not Taking any candidate[i]
         int j = i + 1;
         while (j < candidates.size())
         {
