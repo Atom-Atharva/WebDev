@@ -12,27 +12,53 @@
 // The path only contains the directories on the path from the root directory to the target file or directory (i.e., no period '.' or double period '..')
 // Return the simplified canonical path.
 
+/**********************************************IMP QUESTION************************************************************************/
+
 #include <iostream>
 using namespace std;
-#include <stack>
 
+// Move on String in Reverse Order--
 class Solution
 {
 public:
     string simplifyPath(string path)
     {
-        stack<int> p;
-        p.push('/');
+        string ans = "";
+        int back = 0;
 
-        for (int i = 1; i < path.size()-1; i++)
+        for (int i = path.size() - 1; i >= 0; i--)
         {
-            if (path[i] == '/' && p.top() == '/')
+            // Content between /.../
+            string temp = "";
+            while (i >= 0 && path[i] != '/')
+            {
+                temp = path[i] + temp;
+                i--;
+            }
+
+            if (temp == "" || temp == ".")
             {
                 continue;
             }
-            if(path[i]=='.' && path[i+1]=='.'){
-                
+
+            if (temp == "..")
+            {
+                back++;
+            }
+            else if (back > 0)
+            {
+                back--;
+            }
+            else
+            {
+                ans = temp + ans;
+                ans = '/' + ans;
             }
         }
+        if (ans == "")
+        {
+            return "/";
+        }
+        return ans;
     }
 };
