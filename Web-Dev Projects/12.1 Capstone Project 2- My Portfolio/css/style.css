@@ -1,0 +1,148 @@
+/*Section: Hero*/
+#Hero {
+    background-color: #03001c;
+    color: white;
+}
+
+/*Navigation Bar*/
+.navbar a:hover {
+    color: white;
+}
+.navbar-brand {
+    color: #bbbfca;
+}
+
+.navbar-toggler {
+    color: #bbbfca;
+}
+
+.nav-link {
+    color: #bbbfca;
+    margin-left: 1.5rem;
+}
+
+/*Title*/
+.title {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+h1 {
+    color: white;
+    font-family: "Sacramento", cursive;
+}
+
+.titleh2 {
+    color: #feff86;
+}
+
+.title-button {
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Social Media Links */
+.social {
+    margin-right: 3rem;
+    font-size: 1.75rem;
+    color: white;
+}
+
+/* Section: About Me and Interests */
+#About-me {
+    background-color: #211f2e;
+    color: white;
+}
+
+.bulb-img {
+    margin-right: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #feff86;
+    margin-bottom: 1.5rem;
+}
+
+.abouth2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.me {
+    color: #feff86;
+}
+
+.about {
+    text-align: justify;
+}
+
+.contact {
+    padding-left: 0px;
+}
+
+.contact > li {
+    list-style: none;
+}
+
+.icon {
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+}
+
+.tab {
+    padding-right: 16px;
+}
+
+hr {
+    border-width: 2px;
+}
+
+/*Experience and Footer*/
+#Experience {
+    background-color: #211f2e;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+}
+
+.stars {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills > li {
+    list-style-type: none;
+}
+
+#exp {
+    font-size: 2.5rem;
+}
+
+#choose {
+    margin-top: 2rem;
+}
+
+.text{
+    color: #bbbfca;
+}
+
+.text-link {
+    color: #bbbfca;
+    text-decoration:none;
+    
+}
+
+.text-link:hover {
+    color: white;
+}
