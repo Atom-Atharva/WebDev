@@ -1,0 +1,23 @@
+https://www.scaler.com/topics/why-string-is-immutable-in-java/
+
+Ques: 
+Why String is Immutable in Java?
+
+Ans: 
+In Java, the string is an object that represents a sequence of characters. The java.lang.String class is used to create a string object. Java String class provides a lot of methods to perform operations on strings.
+
+A string is an immutable object which means we cannot change them after creating the objects. Whenever we change any string, a new instance is created. In this article, we will explore Why Strings are immutable in Java along with its benefits.
+
+What is an Immutable Object?
+    Immutable refers to something that cannot be changed or modified. Hence, immutable objects are ones that cannot be modified after they have been created. This is an object whose internal state does not change after it has been created completely. It assures us that it will behave in the same manner for the rest of its life. It can be safely shared among different threads because its internal state remains consistent.
+
+What is Immutable String in Java?
+    A String is defined as a sequence or an array of characters. Strings are treated as objects in the Java programming language. The term "immutable string" in Java refers to a string object that cannot be altered, but the reference to the object can be changed. Every time we make a modification, a new instance of that string is created and the previous value is copied to the new String with the change. The String class is marked final to prevent overriding the functionality of its methods.
+
+    In Java, the String class and all wrapper classes which include Boolean, Character, Byte, Short, Integer, Long, Float, and Double are immutable. A user is free to create immutable classes of their own.
+
+Benefits?
+    1. Security
+    2. Synchronisation
+    3. HashCode Caching
+    4. Performance
