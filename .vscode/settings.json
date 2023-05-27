@@ -5,6 +5,7 @@
         "array": "cpp",
         "deque": "cpp",
         "vector": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "iostream": "cpp"
     }
 }

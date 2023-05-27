@@ -43,7 +43,7 @@ class Solution
             {
                 stones += piles[st + i];
             }
-            ans = max(ans, stones - stoneGame(piles, st + i + 1, max(m, i+1), dp));
+            ans = max(ans, stones - stoneGame(piles, st + i + 1, max(m, i + 1), dp));
         }
         return dp[st][m] = ans;
     }
