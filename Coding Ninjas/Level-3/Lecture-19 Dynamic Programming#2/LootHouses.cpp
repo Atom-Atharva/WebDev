@@ -52,6 +52,25 @@ class Solution
     }
 
 public:
+    // Dynamic Programming--
+    int maxMoneyLooted3(int *arr, int n)
+    {
+        int *dp = new int[n + 1];
+
+        // Fill First Cell--
+        dp[0] = 0;
+        dp[1] = arr[0];
+
+        // Fill Remaining Cells--
+        for (int i = 1; i <= n; i++)
+        {
+            dp[i] = max(arr[i - 1] + dp[i - 2], dp[i - 1]);
+        }
+
+        return dp[n];
+    }
+
+    // Memomization Approach--
     int maxMoneyLooted2(int *arr, int n)
     {
         int **dp = new int *[n + 1];
