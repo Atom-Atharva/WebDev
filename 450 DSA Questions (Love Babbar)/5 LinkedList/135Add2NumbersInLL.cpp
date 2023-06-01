@@ -22,6 +22,7 @@ struct Node
 
 class Solution
 {
+    // Reverse an array--
     void reverse(vector<int> &arr)
     {
         for (int i = 0; i < arr.size() / 2; i++)
@@ -33,6 +34,7 @@ class Solution
         return;
     }
 
+    // Make LL using array--
     Node *makeLL(vector<int> sum)
     {
         Node *head = new Node(sum[0]);
