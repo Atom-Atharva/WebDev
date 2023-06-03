@@ -21,4 +21,3 @@ $("h1").css("font-family", "cursive");
 $("body").keydown(function (event) {
     $("h1").text(event.key);
 });
-            
