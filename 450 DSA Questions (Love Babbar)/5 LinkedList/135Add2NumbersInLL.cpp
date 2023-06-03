@@ -20,6 +20,7 @@ struct Node
     }
 };
 
+// Method 2: Deal with Arrays...
 class Solution
 {
     // Reverse an array--
@@ -111,17 +112,18 @@ public:
     }
 };
 
-// Wrong Answer: As range of numbers are more than int--
-// class Solution
-// {
-//     Node *makeLL(int sum)
-//     {
-//         // Base Case--
-//         if (sum == 0 || sum / 10 == 0)
-//         {
-//             Node *head = new Node(sum);
-//             return head;
-//         }
+// Method 1: Converting list into integer...
+//  Wrong Answer: As range of numbers are more than int--
+//  class Solution
+//  {
+//      Node *makeLL(int sum)
+//      {
+//          // Base Case--
+//          if (sum == 0 || sum / 10 == 0)
+//          {
+//              Node *head = new Node(sum);
+//              return head;
+//          }
 
 //         // Reccursive Call--
 //         Node *head = makeLL(sum / 10);
