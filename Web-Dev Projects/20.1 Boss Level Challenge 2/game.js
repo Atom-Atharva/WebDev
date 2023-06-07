@@ -64,9 +64,7 @@ $(".btn").click(function () {
     animatePress(userChosenColour);
 
     //Call Check Answer Function--
-    if (userClickedPattern.length == gamePattern.length) {
-        checkAnswer();
-    }
+    checkAnswer(userClickedPattern.length - 1);
 });
 
 //Animation to User Click--
@@ -87,12 +85,14 @@ $("body").keydown(function () {
 });
 
 //Check User Answer--
-function checkAnswer() {
-    if (userClickedPattern.toString() === gamePattern.toString()) {
-        console.log("success");
+function checkAnswer(stage) {
+    if (userClickedPattern[stage] === gamePattern[stage]) {
+        if (userClickedPattern.length === gamePattern.length) {
+            console.log("success");
 
-        //Calling nextSequence--
-        setTimeout(nextSequence, 1000);
+            //Calling nextSequence--
+            setTimeout(nextSequence, 1000);
+        }
     } else {
         console.log("wrong");
 
