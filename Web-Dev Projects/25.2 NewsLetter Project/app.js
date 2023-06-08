@@ -90,6 +90,7 @@ app.post("/failure", (req, res) => {
     res.redirect("/");
 });
 
+//process.env.PORT allows to adapt server based on server to which it is hosted--
 app.listen(process.env.PORT || port, (err) => {
     if (err) throw err;
     console.log(`Listning to Port: ${port}`);
