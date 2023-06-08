@@ -4,6 +4,7 @@ import path from "path";
 
 const app = express();
 
+//For accessing body--
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
