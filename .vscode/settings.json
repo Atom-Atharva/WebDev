@@ -6,6 +6,9 @@
         "deque": "cpp",
         "vector": "cpp",
         "new": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "tuple": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
     }
 }
