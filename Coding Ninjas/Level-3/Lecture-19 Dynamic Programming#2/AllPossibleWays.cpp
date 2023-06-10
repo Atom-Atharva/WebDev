@@ -2,28 +2,6 @@
 using namespace std;
 #include <cmath>
 
-// Method 2: Dynamic Programming--
-class Solution
-{
-public:
-    int getAllWays(int a, int b)
-    {
-        int n = pow(a, (double)1 / b);
-        int *arr = new int[n + 1];
-
-        // Initial Cell--
-        arr[0] = 0;
-
-        // Fill Remaining Cells--
-        for (int i = 1; i <= n; i++)
-        {
-            
-        }
-
-        return arr[n];
-    }
-};
-
 // Method 1: Reccursion (Take or Refuse)--
 class Solution
 {
