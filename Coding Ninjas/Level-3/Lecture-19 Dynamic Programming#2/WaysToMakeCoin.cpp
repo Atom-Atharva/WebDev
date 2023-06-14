@@ -12,7 +12,6 @@ class Method3
         {
             dp[i] = new int[n];
         }
-
         // Initial Cell--
         dp[0][0] = 1;
 
