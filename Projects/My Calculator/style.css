@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+    background-color: #272838;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    height: 87vh;
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+.main {
+    height: 100%;
+}
+
+.calculator-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: transparent solid;
+    padding: 1vh;
+    background: #1e2129;
+    width: fit-content;
+}
+
+.button {
+    width: 6vh;
+    padding: 1.5vh;
+    margin: 2px;
+    border-radius: 35%;
+    background-color: transparent;
+    box-shadow: 0px 1px 3px;
+    color: white;
+    border: transparent;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    opacity: 50%;
+    color: black;
+}
+
+.equals {
+    width: 13vh;
+    background-color: rgb(15, 24, 24);
+    border-radius: 10%;
+}
+
+.row {
+    margin: 1vh;
+}
+
+.input-box {
+    width: 28vh;
+    padding: 1vh 1vh;
+    margin: 1vh 1vh;
+    text-align: end;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: 0px 0px 1px;
+    color: white;
+    font-size: 5vh;
+}
+
+.input-box::placeholder {
+    color: white;
+}
