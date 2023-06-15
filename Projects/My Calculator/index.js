@@ -10,9 +10,6 @@ for (let i = 0; i < buttons; i++) {
             if (element == "C") {
                 string = "";
             }
-            if (element == "M+") {
-                string = string * 1;
-            }
             if (element == "+/-") {
                 string = string * -1;
             }
