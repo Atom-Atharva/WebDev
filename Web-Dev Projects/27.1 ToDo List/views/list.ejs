@@ -1,0 +1,44 @@
+<!--Layout-->
+<%- include("header") -%>
+
+    <div class="box" id="heading">
+        <h1>
+            <%= listType %>
+        </h1>
+    </div>
+
+    <div class="box">
+        <!-- Looping the list items for li -->
+        <% for(let i=0;i<listItems.length;i++){ %>
+            <div class="item">
+                <input type="checkbox">
+                <p>
+                    <%= listItems[i] %>
+                </p>
+            </div>
+            <% } %>
+
+
+
+                <form class="item" action="/" method="post">
+                    <input type="text" name="newItem" placeholder="Add TODO" autocomplete="off">
+                    <button type="submit" name="list" value="<%= listType%>">+</button>
+                </form>
+    </div>
+
+    <!--<% %> This is used to include script lines, Must be included in all lines individually-->
+    <!-- <% if(listType==="Saturday" ||listType==="Sunday" ){ %>
+
+            <h1 style="color:blue">
+                <%= listType%> TODO List!
+            </h1>
+            <% }else{ %>
+                <h1 style="color:red">
+                    <%= listType%> TODO List!
+                </h1>
+
+                <% } %> -->
+
+
+    <!-- Layout -->
+    <%- include("footer") -%>
