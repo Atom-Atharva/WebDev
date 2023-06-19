@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 client.setConfig({
-    apiKey: "cdf8d255378e42146d6ba551b92a7474-us13",
+    apiKey: "05965240b23ec5d6db109514cbfa449f-us13",
     server: "us13",
 });
 
@@ -97,7 +97,8 @@ app.listen(process.env.PORT || port, (err) => {
 });
 
 //API Key (Mailchimp)--
-// cdf8d255378e42146d6ba551b92a7474-us13
+// It may be revoked automatically--
+// 05965240b23ec5d6db109514cbfa449f-us13
 
 //List id--
 // a231db7880
