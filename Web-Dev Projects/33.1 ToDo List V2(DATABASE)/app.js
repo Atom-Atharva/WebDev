@@ -4,7 +4,9 @@ import mongoose from "mongoose";
 import _ from "lodash";
 
 //Connect to mongodb database via mongoose--
-mongoose.connect("mongodb+srv://user-admin:atharva1908@cluster0.6skzckf.mongodb.net/todolistDB");
+mongoose.connect(
+    "mongodb+srv://user-admin:atharva1908@cluster0.6skzckf.mongodb.net/todolistDB"
+);
 
 const app = express();
 const port = 3000;
@@ -131,7 +133,7 @@ app.get("/about", (req, res) => {
 });
 
 //Listning to the port--
-app.listen(port || process.env.PORT, (err) => {
+app.listen(process.env.PORT || port, (err) => {
     if (err) throw err;
-    console.log(`Listning to ${port}`);
+    console.log(`Listning...`);
 });
