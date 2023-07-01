@@ -4,6 +4,9 @@
 
 // Note :-  l and r denotes the starting and ending index of the array.
 
+//***************** *IMPORTANT QUESTION* ********************//
+// --(ALSO SOLVED IN ARRAYS)--
+
 #include <iostream>
 using namespace std;
 #include <queue>
@@ -87,7 +90,7 @@ public:
     {
         quick(arr, l, r, k);
 
-        return arr[k];
+        return arr[k - 1];
     }
 };
 
