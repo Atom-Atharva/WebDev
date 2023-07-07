@@ -1,1 +1,0 @@
-smallout + pow(0.5, k)
