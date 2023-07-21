@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Namaste React</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+
+    <body>
+
+
+        <!--Only div with id root will be affected-->
+        <div id="root">
+
+            <!-- *This will later replaced not appended by app.js* -->
+            <h1>Not Rendered!</h1>
+        </div>
+
+
+
+        <!-- First Way to inject React in our code -->
+        <!-- *Not Preferred Method to add react this way rather use npm install react & npm install react-dom (Second Way to inject React in our code) -->
+        <!-- Cross Origin Resource Sharing (CORS) refers to the method that allows you to make requests to the server deployed at a different domain.-->
+        <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+
+        <!--React External JS-->
+        <script type="module" src="./app.js"></script>
+
+        <!--React Internal JS-->
+        <!-- <script>
+            const heading = React.createElement('h1', {}, "Hello World From React!");
+
+            const root = ReactDOM.createRoot(document.getElementById("root"));
+
+            root.render(heading);
+        </script> -->
+
+        <!--Custom JS-->
+        <!-- <script>
+            // Creating HTML from JavaScript--
+            const heading = document.createElement("h1");
+            heading.innerHTML = "Hello World From JavaScript!";
+
+            const root = document.getElementById("root");
+            root.appendChild(heading);
+        </script> -->
+    </body>
+
+</html>

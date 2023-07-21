@@ -1,0 +1,7 @@
+# Things which can be regenerated will come in gitignore
+
+node_modules
+
+dist
+
+.parcel-cache
