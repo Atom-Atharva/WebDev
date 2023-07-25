@@ -1,3 +1,23 @@
 #heading {
     color: red;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+.atom {
+    width: 50px;
+}
+
+.search-bar {
+    align-items: center;
+    padding-top: 15px;
+}
+
+.user-logo {
+    font-size: 35px;
+    align-content: center;
+}

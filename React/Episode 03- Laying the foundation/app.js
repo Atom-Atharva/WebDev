@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import atomLogo from "./public/images/atom.png";
 
 // React Element => Object (react.createElement() creates an object) => When we render this to DOM then it become HTML Element.
 const heading = React.createElement(
@@ -19,6 +20,19 @@ const jsxHeading = (
 );
 
 console.log(jsxHeading);
+
+const Header = () => {
+    return (
+        <div className="header">
+            <img className="atom" src={atomLogo} alt="logo" />
+            <form className="search-bar">
+                <input type="text" placeholder="Search Bar"></input>
+                <button type="submit">search</button>
+            </form>
+            <i className="fa-solid fa-user user-logo"></i>
+        </div>
+    );
+};
 
 // React Functional Components.
 const Title = () => {
@@ -60,8 +74,13 @@ const HeadingComponent = () => {
 const Body = () => {
     return (
         <React.Fragment>
-            <div className="container1"></div>
-            <div className="container2"></div>
+            <Header />
+            <div className="container1">
+                <Title></Title>
+            </div>
+            <div className="container2">
+                <h2>I am Atharva!</h2>
+            </div>
         </React.Fragment>
     );
 };
@@ -78,4 +97,4 @@ const Body2 = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // root.render(jsxHeading);
-root.render(<HeadingComponent />);
+root.render(<Body />);
