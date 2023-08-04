@@ -73,4 +73,8 @@
 
 ## CODE FAST, SLOW DEBUGGING! CODE SLOW, NO DEBUGGING!!
 
-- BY: MASTER AKSHAY SAINI
+-   BY: MASTER AKSHAY SAINI
+
+## NOTE:
+
+-   Start Project in Chrome and ALLOW CORS extension.

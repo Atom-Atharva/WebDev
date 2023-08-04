@@ -2,6 +2,7 @@ import RestaurantCard from "./RestuarantCard";
 // import resList from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { SWIGGY_URL } from "../utils/constants";
 
 // Body Container--
 const Body = () => {
@@ -36,7 +37,7 @@ const Body = () => {
         const data = await fetch(
             // Swiggy API--
             // It cannot be fetch normally due to CORS, prevented using allow CORS extension--
-            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.6734596&lng=75.8789932&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+            SWIGGY_URL
         );
 
         // CONVERT INTO JSON FILE--
@@ -47,16 +48,39 @@ const Body = () => {
         // setListOfRestaurants(
         //     json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
         // );
+        // setFilteredRestaurants(
+        //     json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
+        // );
 
         // Optional Chaining--
-        setListOfRestaurants(
-            json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
-                ?.restaurants
-        );
-        setFilteredRestaurants(
-            json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
-                ?.restaurants
-        );
+        // setListOfRestaurants(
+        //     json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+        //         ?.restaurants
+        // );
+        // setFilteredRestaurants(
+        //     json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+        //         ?.restaurants
+        // );
+
+        // initialize checkJsonData() function to check Swiggy Restaurant data
+        async function checkJsonData(jsonData) {
+            for (let i = 0; i < jsonData?.data?.cards.length; i++) {
+                // updated state variable restaurants with Swiggy API data
+                // initialize checkData for Swiggy Restaurant data
+                let checkData =
+                    jsonData?.data?.cards[i]?.card?.card?.gridElements
+                        ?.infoWithStyle?.restaurants;
+
+                // if checkData is not undefined then return it
+                if (checkData !== undefined) {
+                    return checkData;
+                }
+            }
+        }
+        const resData = await checkJsonData(json);
+
+        setListOfRestaurants(resData);
+        setFilteredRestaurants(resData);
     };
 
     // Conditional Rendering(On basis of some condition) --
