@@ -32,3 +32,9 @@
 -   CONS:
     1. Need Initial Learning
     2. Make our code look ugly: More classNames on single element.
+
+## Tailwind.config.js
+
+-   Content: What file paths have tailwind.
+-   Theme: Define color palette, type scale, fonts, etc.
+-   Plugin: Extra utilities, component, etc.
