@@ -64,3 +64,56 @@
 -   In New Redux Toolkit: We have to MUTATE State.
 
 -   Redux DevTools make developer's life easy in debugging.
+
+# Assignment:
+
+## useContext vs Redux
+
+-   useContext: useContext is a hook that provides a way to pass data through the component tree without manually passing props down through each nested component.
+
+-   Redux: Redux is a state managing library used in JavaScript apps. It is very popular for React and React-Native. It simply manages the state and data of your application.
+
+-   Building Parts of redux:
+
+    1. Action
+    2. Reducer
+    3. Store
+
+-   (Differences between Redux and useContext)[https://www.geeksforgeeks.org/whats-the-difference-between-usecontext-and-redux/]
+
+## Redux Toolkit over Redux
+
+-   Redux Toolkit is used to write redux code but in more concise way, RTK abstracts the basic redux code and provides us boilerplate that enable us to write redux code in less line of code.
+
+-   RTK reduces complexity of the Redux.
+-   RTK gives ability to write mutable state updates in the reducers.
+
+## Dispatcher
+
+-   Dispatcher dispatches an action and trigger state changes to the store.
+
+## Reducer
+
+-   Pure functions that contain the logic and calculation that needed to be performed on the state.
+
+## Slice
+
+-   Small portion of the redux store.
+
+-   Collection of Redux reducer logic and actions for a single feature in your app, typically defined together in a single file.
+
+## Selector
+
+-   It is used to SUBSCRIBING to the store, on updating the state --> updates should reflect on the components which are subscribed to the store using selector.
+
+## createSlice
+
+-   This function is used to create slice in our store.
+
+-   It takes:
+
+    1. initial State
+    2. Object of Reducer Functions
+    3. Slice Name
+
+-   It automatically generates action creators and action types that correspond to the reducers and state.
